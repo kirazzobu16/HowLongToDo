@@ -1,0 +1,32 @@
+body{
+    background-color: cadetblue;
+}
+* {
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 10px;
+}
+
+h2.a{ 
+	position: absolute; 
+	left:6em;
+	top: 17em;
+	color: red;
+	font-style: italic;
+	font-size: 1.5em;
+}
+.number1{
+	position: absolute; 
+	left:9em;
+	top: 30em;
+	float: left;
+	width: 50%;
+
+}
+button{
+	margin-top:1em;
+}
