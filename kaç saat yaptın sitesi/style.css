@@ -12,13 +12,11 @@ body{
 	padding: 10px;
 }
 
-h2.a{ 
+.a{ 
 	position: absolute; 
 	left:6em;
-	top: 17em;
+	top: 17em;	
 	
-	font-style: italic;
-	font-size: 1.5em;
 }
 .number1{
 	position: absolute; 
@@ -30,4 +28,30 @@ h2.a{
 }
 button{
 	margin-top:1em;
+}
+.number2{
+	width:25%;
+	position: absolute; 
+	left:30em;
+	top: 13em;
+
+}
+.divnumber2{
+  display: inline;
+	position: absolute; 
+	left:34em;
+	top: 30em;
+	
+
+}
+
+.codeposition{
+	position: absolute; 
+	left:22em;
+	top: 16.9em;	
+	
+}
+
+.music{
+	display: inline;
 }
