@@ -53,5 +53,15 @@ button{
 }
 
 .music{
-	display: inline;
+	display:inline-block;
+	margin-bottom:1.7em;
+}
+.number3{
+	display:inline-block;
+	width:25%;
+	margin-top: 1.8em;
+	margin-left: 4em;
+}
+.learn{
+	margin-right:5em;
 }
