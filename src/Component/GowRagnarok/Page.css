@@ -1,0 +1,29 @@
+.Page{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./Photos/Photo3.jpg);
+    background-size:cover;
+      
+  }
+  
+  /* @keyframes animate {
+    0%,100%{
+      background-image: url(./Photos/Photo3.jpg);
+    }
+    25%{
+      background-image: url(./Photos/Photo2.jpg);
+    }
+    50%{
+      background-image: url(./Photos/photo.jpg);
+    }
+    75%{
+      background-image: url(./Photos/ragnarok.jpg);
+    }
+  } */
+  
+  @font-face {
+    font-family: "Berserker";
+    src: url("../GowRagnarok/Berserker-Regular.ttf") format(truetype);
+  }
+  

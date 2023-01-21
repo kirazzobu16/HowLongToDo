@@ -1,0 +1,75 @@
+.menu-AreaClassic{
+    display: inline-flex;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+  }
+  
+  .menu-AreaClassic li {
+   background-image:linear-gradient(to right, #ff8008, #ffc837);
+    border-radius: 3px;
+    letter-spacing:1px;
+    font-family: England;
+    font-size: 15px;
+    
+    
+  }
+  @font-face {
+    font-family: "England";
+    src: url("./rumburak.regular.ttf") format(truetype);
+  }
+  
+  
+  .menu-AreaClassic li:hover {
+    background: linear-gradient(180deg,#f83600 16% , #fe8c00 100%);
+    cursor: pointer;
+  }
+  .dropdown>li{
+    display: none;
+  }
+  
+  .menu-AreaClassic li:hover>.dropdown {
+    perspective: 1000px;
+  }
+  
+  .menu-AreaClassic li:hover>.dropdown li{
+    transform-origin: top center;
+    opacity: 1;
+    display: block;
+  }
+  
+  .menu-AreaClassic li:hover>.dropdown li:nth-child(1){
+    animation: animateDropdown 300ms ease-in-out forwards;
+    animation-delay: -150ms;
+  }
+  .menu-AreaClassic li:hover>.dropdown li:nth-child(2){
+    animation: animateDropdown 300ms ease-in-out forwards;
+    animation-delay: 0ms;
+  }
+  .menu-AreaClassic li:hover>.dropdown li:nth-child(3){
+    animation: animateDropdown 300ms ease-in-out forwards;
+    animation-delay: 150ms;
+  }
+  
+  @keyframes animateDropdown {
+    0%{
+      opacity: 0;
+      transform: scale(0)
+    }
+    50%{
+      opacity: 1;
+    }
+    90%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .Link {
+    color: black;
+    text-decoration: none;
+  }
+  

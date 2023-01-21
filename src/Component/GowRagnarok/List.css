@@ -1,0 +1,86 @@
+
+
+li {
+   list-style: none;
+   font-family:"Berserker";
+   font-size: smaller;
+   
+}
+@font-face {
+    font-family: "Berserker";
+    src: url("./Berserker-Regular.ttf") format(truetype);
+  }
+ 
+  button{
+    font-family: "Berserker";
+    background-image: linear-gradient( 109.6deg,  rgba(156,252,248,1) 11.2%, rgba(110,123,251,1) 91.1% );
+    border: 0px;
+    padding: 2px;
+    border-radius: 3px;
+  }
+  button:hover{
+    background-image: linear-gradient(180deg, rgba(9,24,121,0.969625350140056) 16%, rgba(0,212,255,1) 100%);    
+  }
+
+.flex{
+    display: flex;
+    justify-content: space-evenly; 
+}
+
+.list {
+    padding: 20px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(0.5px);
+    -webkit-backdrop-filter: blur(0.5px);
+   
+}
+
+p {
+    margin-top: 2px;
+}
+
+span>p{
+    margin-top: 2px;
+}
+.container { 
+    background-color: transparent;
+    margin-top: 10px;
+    height:370px;
+    overflow: auto; 
+    scrollbar-width: thin;   
+}
+
+.container::-webkit-scrollbar {
+    background:#1C82AD;;
+    width: 7px;
+    height: 7px;
+    border-radius: 6px;
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgba(9,24,121,0.969625350140056);
+  }
+  
+.Time {
+    display:flex; 
+    column-gap: 10px; 
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.box {
+    width:15%;   
+    background: linear-gradient(180deg, rgba(9,24,121,0.969625350140056) 16%, rgba(0,212,255,1) 100%);
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.todo {
+    word-break: break-all;
+}
+
+li>button {
+    align-self: center;
+}

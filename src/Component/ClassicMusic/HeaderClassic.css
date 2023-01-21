@@ -1,0 +1,44 @@
+
+.inputClassic{
+    display: flex;
+    justify-content:center ;
+    margin-top: 3vh;
+    
+}
+.inputClassic>input{
+    border-radius: 6px;
+    border:1px solid #fe8c00
+}
+
+.inputClassic>input:focus{
+    outline:none;
+    border:1px solid #f83600
+}
+
+.HeaderClassic>h1 {    
+    text-align: center;
+    
+    color:#ff8008;
+    font-family: England;
+    font-size: 48px;
+}
+
+.inputClassic>button {
+    cursor: pointer;
+    font-family: "England";
+    background-image:linear-gradient(to right, #ff8008, #ffc837);
+    
+}
+
+.inputClassic>button:hover {
+
+    background: linear-gradient(90deg,#f83600 16% , #fe8c00 100%);
+}
+
+
+
+  @font-face {
+    font-family: "England";
+    src: url("./rumburak.regular.ttf") format(truetype);
+  }
+

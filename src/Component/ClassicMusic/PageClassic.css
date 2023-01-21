@@ -1,0 +1,26 @@
+.PageClassic{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./PhotosClassic/AutumnTree.jpg);
+    background-size:cover;
+       
+  }
+  
+  /* @keyframes animateClassic {
+    0%,100%{
+      background-image: url(./PhotosClassic/AutumnTree.jpg);
+    }
+    25%{
+      background-image: url(./PhotosClassic/SpringTree.jpg);
+    }
+    50%{
+      background-image: url(./PhotosClassic/SummerTree.jpg);
+    }
+    75%{
+      background-image: url(./PhotosClassic/WinterTree.jpg);
+    }
+  } */
+  
+  
+  

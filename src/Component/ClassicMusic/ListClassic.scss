@@ -1,0 +1,100 @@
+.Classic {
+
+li {
+    list-style: none;
+    font-family:"England";
+    font-size: 16px;
+    
+ }
+ @font-face {
+     font-family: "England";
+     src: url("./rumburak.regular.ttf") format(truetype);
+   }
+  
+   button{
+     font-family: "England";
+     background-image:linear-gradient(to right, #ff8008, #ffc837);
+     border: 0px;
+     padding: 2px;
+     border-radius: 3px;
+   }
+   button:hover{
+    background: linear-gradient(180deg,#f83600 16% , #fe8c00 100%);    
+   }
+ 
+ .flex{
+     display: flex;
+     justify-content: space-evenly; 
+ }
+ 
+ .list {
+     padding: 20px 0;
+     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+     backdrop-filter: blur(0.5px);
+     -webkit-backdrop-filter: blur(0.5px);
+    
+ }
+ 
+ p {
+     margin-top: 2px;
+ }
+ 
+ span>p{
+     margin-top: 2px;
+ }
+ .container { 
+     background-color: transparent;
+     margin-top: 10px;
+     height:370px;
+     overflow: auto; 
+     scrollbar-width: thin;   
+ }
+ 
+ .container::-webkit-scrollbar {
+     background:#f83600;
+     width: 7px;
+     height: 7px;
+     border-radius: 6px;
+   }
+   
+   .container::-webkit-scrollbar-thumb {
+     border-radius: 6px;
+     background: #fe8c00
+   }
+   
+ .Time {
+     display:flex; 
+     column-gap: 10px; 
+     justify-content: space-evenly;
+     align-self: center;
+ }
+ 
+ .box {
+     width:15%;   
+     background: linear-gradient(180deg,#f83600 16% , #fe8c00 100%);
+     padding: 15px 0;
+     text-align: center;
+     border-radius: 5px;
+     
+ }
+ 
+ .todo {
+     word-break: break-all;
+ }
+ 
+ li>button {
+     align-self: center;
+ }
+}
+
+ .Classic::-webkit-scrollbar {
+    background:#fe8c00;
+    width: 7px;
+    height: 7px;
+    border-radius: 6px;
+  }
+  
+  .Classic::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background:#f83600;
+  }

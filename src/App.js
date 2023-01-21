@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from "react";
+
+
 import './App.css';
+import  {DoProvider} from "./Component/Context"
+import Page from "./Component/GowRagnarok/Page"
+import ClassicMusic from "./Component/ClassicMusic/ClassicMusic";
+import LordofTheRings from "./Component/LordofTheRings/LordofTheRings";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+
+
+
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <DoProvider>
+
+        <BrowserRouter>
+          <Routes>
+              <Route path="Gow" element={<Page/>}></Route>
+              <Route path="ClassicMusic" element={<ClassicMusic/>}></Route>
+              <Route path="LordofTheRings" element={<LordofTheRings/>}></Route>
+          </Routes>
+        </BrowserRouter>
+
+        
+      </DoProvider>
   );
 }
+
 
 export default App;

@@ -1,0 +1,36 @@
+
+.input{
+    display: flex;
+    justify-content:center ;
+    margin-top: 3vh;
+    
+}
+.input>input{
+    border-radius: 6px;
+    border:1px solid rgba(110,123,251,1)
+}
+
+input:focus{
+    outline:none;
+    border:1px solid rgba(9,24,121,0.969625350140056)
+}
+
+h1 {    
+    text-align: center;
+    font-family: "Berserker";
+   color: #1C82AD;
+}
+
+button {
+    cursor: pointer;
+}
+
+.input::-webkit-input-placeholder {
+    font-family: "Berserker"
+  }
+
+  @font-face {
+    font-family: "Berserker";
+    src: url("./Berserker-Regular.ttf") format(truetype);
+  }
+

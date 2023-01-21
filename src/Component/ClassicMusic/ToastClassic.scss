@@ -1,0 +1,187 @@
+.HeaderClassic{
+    .alert {
+        background-image:linear-gradient(to left, #ff8008, #ffc837);
+        width:20%;
+        height: auto;
+        display:inline-flex;
+        padding: 0.25em;
+        border-radius: 4px;
+        /* border-left: px solid rgba(9,24,121,0.969625350140056); */
+        margin-top: 1em;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;   
+        opacity:0 ;
+        pointer-events: none;
+        font-family: "England";
+        font-size: normal;
+    }
+    
+    @font-face {
+        font-family: "England";
+        src: url("./rumburak.regular.ttf") format(truetype);
+      }
+    .alertShow{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    
+    .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background-color: #ff8008;
+        border-radius: 50%;
+    }
+    .info{
+        padding: 0 1rem;
+        line-height: 1.5em;
+    }
+    .check {
+        font-size: 1.5em;
+        color: #ffc837;
+    }
+    
+    .close {
+        width: 10px;
+        height: 10px;    
+    }
+    
+    .alert.show {
+        animation: show_slide 1s ease forwards;
+        
+    }
+    
+    @keyframes show_slide {
+        0%{
+            transform: translateX(100%);
+        }  
+        40%{
+            transform: translateX(-10%)
+        }
+        80%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(0%);
+        } 
+    }
+    
+    .alert.hide{
+        animation: hide_slide 1s ease forwards;
+        
+    }
+    
+    @keyframes hide_slide {
+        0%{
+            transform: translateX(-10%);
+        }
+         40%{
+            transform: translateX(0%);
+        } 
+        80%{
+            transform: translateX(-10%);
+        }
+        100%{
+            transform: translateX(100%);
+            
+        }    
+       
+    }
+    
+    /* When delete your list */
+    .delete {
+        background-image:linear-gradient(to left, #ff8008, #ffc837);
+        width:20%;
+        height: auto;
+        display:inline-flex;
+        padding: 0.25em;
+        border-radius: 4px;
+        margin-top: 1em;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: absolute;
+        right: 0;   
+        opacity: 0;
+        pointer-events: none;
+        font-family: "England";
+        font-size: normal;
+        
+    }
+    .alertdeleteShow{
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .iconDelete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        background-color: #ff8008;
+        border-radius: 50%;
+    }
+    .infoDelete{
+        padding: 0 1rem;
+        line-height: 1.5em;
+    }
+    .checkDelete {
+        font-size: 1.5em;
+        color: #ffc837;
+    }
+    
+    .closeDelete {
+        width: 10px;
+        height: 10px;    
+    }
+    
+    .delete.show {
+        animation: show_deleteSlide 1s ease forwards;
+        
+    }
+    
+    @keyframes show_deleteSlide {
+       
+        0%{
+            transform: translateX(100%);
+        }  
+        40%{
+            transform: translateX(-10%)
+        }
+        80%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(0%);
+        }
+    }
+    
+    .delete.hide{
+        animation: hide_Deleteslide 1s ease forwards;
+        
+    }
+    
+    @keyframes hide_Deleteslide {
+        0%{
+            transform: translateX(-10%);
+        }
+         40%{
+            transform: translateX(0%);
+        } 
+        80%{
+            transform: translateX(-10%);
+        }
+        100%{
+            transform: translateX(100%);
+            
+        }     
+        
+    }
+    
+    
+    
+}
+/* When you add your list */
+
