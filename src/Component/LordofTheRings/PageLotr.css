@@ -1,0 +1,23 @@
+.PageLotr {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /* animation: animate 25s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; */
+    background-image: url("./PhotosLotr/shire.jpg");
+    background-size:cover;
+}
+
+/* @keyframes animate {
+    0%,100%{
+      background-image: url(./PhotosLotr/shire.jpg);
+    }
+    25%{
+      background-image: url(./PhotosLotr/Ring.jpg);
+    }
+    50%{
+      background-image: url(./PhotosLotr/rivendell.jpg);
+    }
+    75%{
+      background-image: url(./PhotosLotr/sauron.jpg);
+    }
+  } */

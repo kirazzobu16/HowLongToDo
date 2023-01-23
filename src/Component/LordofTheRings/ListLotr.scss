@@ -1,0 +1,89 @@
+.Lotr {
+    
+
+li {
+    list-style: none;
+    font-family:"Hobbit";
+    font-size: smaller;
+    
+ }
+ @font-face {
+     font-family: "Hobbit";
+     src: url("./RingbearerMedium-51mgZ.ttf") format(truetype);
+   }
+  
+   button{
+     font-family: "Hobbit";
+     background-image: linear-gradient( 117deg,  rgba(123,216,96,1) 39.2%, rgba(255,255,255,1) 156.2% );
+     border: 0px;
+     padding: 2px;
+     border-radius: 3px;
+   }
+   button:hover{
+     background-image:linear-gradient(180deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );  
+   }
+ 
+ .flex{
+     display: flex;
+     justify-content: space-evenly; 
+ }
+ 
+ .list {
+     padding: 20px 0;
+     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+     backdrop-filter: blur(0.5px);
+     -webkit-backdrop-filter: blur(0.5px);
+    
+ }
+ 
+ p {
+     margin-top: 2px;
+ }
+ 
+ span>p{
+     margin-top: 2px;
+ }
+ .container { 
+     background-color: transparent;
+     margin-top: 10px;
+     height:370px;
+     overflow: auto; 
+     scrollbar-width: thin;   
+ }
+ 
+ 
+   
+ .Time {
+     display:flex; 
+     column-gap: 10px; 
+     justify-content: space-evenly;
+     align-self: center;
+ }
+ 
+ .box {
+     width:15%;   
+     background: linear-gradient(180deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
+     padding: 15px 0;
+     text-align: center;
+     border-radius: 5px;
+ }
+ 
+ .todo {
+     word-break: break-all;
+ }
+ 
+ li>button {
+     align-self: center;
+ }
+}
+.Lotr.container::-webkit-scrollbar {
+    background:rgba(99,162,17,1);
+    width: 7px;
+    height: 7px;
+    border-radius: 6px;
+  }
+  
+  .Lotr.container::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgba(34,126,34,1);
+  }

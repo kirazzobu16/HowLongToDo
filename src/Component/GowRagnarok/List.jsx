@@ -114,7 +114,7 @@ function List({setDeleteToast}) {
                         <button onClick={()=>IncreaseMinutes(item.id)}>+</button>
                       </div>
                       <span className='box'><p>{item.level}</p></span>
-                      <button onClick={()=>Delete(item.id)}>Sil</button>                             
+                      <button onClick={()=>Delete(item.id)}>Delete</button>                             
                   </li>   
             </div>
               ))             

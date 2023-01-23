@@ -1,0 +1,38 @@
+.Lotr {
+    .input{
+        display: flex;
+        justify-content:center ;
+        margin-top: 3vh;
+        
+    }
+    .input>input{
+        border-radius: 6px;
+        border:1px solid rgba(99,162,17,1)
+    }
+    
+    input:focus{
+        outline:none;
+        border:1px solid rgba(34,126,34,1);
+    }
+    
+    h1 {    
+        text-align: center;
+        font-family: "Hobbit";
+       color: rgba(34,126,34,1);
+       font-size: 48px;
+    }
+    
+    button {
+        cursor: pointer;
+    }
+    
+    .input::-webkit-input-placeholder {
+        font-family: "Hobbit"
+      }
+}
+
+@font-face {
+    font-family: "Hobbit";
+    src: url("./RingbearerMedium-51mgZ.ttf") format(truetype);
+  }
+    
