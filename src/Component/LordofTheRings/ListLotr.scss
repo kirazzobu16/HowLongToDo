@@ -65,7 +65,10 @@ li {
      background: linear-gradient(180deg,  rgba(34,126,34,1) 8%, rgba(99,162,17,1) 86.9% );
      padding: 15px 0;
      text-align: center;
-     border-radius: 5px;
+     border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px
  }
  
  .todo {

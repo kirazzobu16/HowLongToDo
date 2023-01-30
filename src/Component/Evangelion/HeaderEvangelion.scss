@@ -1,0 +1,39 @@
+.Evangelion{
+    .input{
+        display: flex;
+        justify-content:center ;
+        margin-top: 3vh;
+        
+    }
+    .input>input{
+        border-radius: 6px;
+        border:1px solid  rgba(110,44,107,1)
+    }
+    
+    input:focus{
+        outline:none;
+        border:1px solid rgba(209,0,116,1)
+    }
+    
+    h1 {    
+        text-align: center;
+        font-family: "Star Wars";
+       color: #3D1766;;
+       font-size: 48px;
+    }
+    
+    button {
+        cursor: pointer;
+        
+    }
+    
+    .input::-webkit-input-placeholder {
+        font-family: "Star Wars"
+      }
+
+}
+
+@font-face {
+    font-family: "Star Wars";
+    src: url("./Evangelion.ttf") format(truetype);
+  }

@@ -1,0 +1,8 @@
+.PageBerserk {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    /* animation: animate 25s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; */
+    background-image: url("./PhotosBerserk/Berserk.jpg");
+    background-size:cover;
+}

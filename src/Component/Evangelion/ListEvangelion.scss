@@ -1,0 +1,97 @@
+.Evangelion {
+  
+
+    li {
+        list-style: none;
+        font-family:"Evangelion";
+        font-size: 13px;     
+     }
+     
+      
+       button{
+         font-family: "Evangelion";
+         background-image: linear-gradient( 83.2deg,  rgba(150,93,233,1) 10.8%, rgba(99,88,238,1) 94.3% );;
+         border: 0px;
+         padding: 2px;
+         border-radius: 3px;
+         
+       }
+       button:hover{
+        background-image:  linear-gradient( 90.6deg,  rgba(110,44,107,1) 11.2%, rgba(209,0,116,1) 91.1% );  
+       }
+     
+     .flex{
+         display: flex;
+         justify-content: space-evenly; 
+     }
+     
+     .list {
+         padding: 20px 0;
+         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+         backdrop-filter: blur(0.5px);
+         -webkit-backdrop-filter: blur(0.5px);
+        
+     }
+     
+     p {
+         margin-top: 5px;
+     }
+     
+     span>p{
+         margin-top: 5px;
+     }
+     .container { 
+         background-color: transparent;
+         margin-top: 10px;
+         height:370px;
+         overflow: auto; 
+         scrollbar-width: thin;   
+     }
+     
+     
+       
+     .Time {
+         display:flex; 
+         column-gap: 10px; 
+         justify-content: space-evenly;
+         align-self: center;
+     }
+     
+     .box {
+         width:15%;   
+         background-image: linear-gradient( 180.6deg,  rgba(110,44,107,1) 11.2%, rgba(209,0,116,1) 91.1% );
+         padding: 15px 0;
+         text-align: center;
+         border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px
+     }
+     
+     .todo {
+         word-break: break-all;
+     }
+     
+     li>button {
+         align-self: center;
+     }
+    }
+
+    .Evangelion.container::-webkit-scrollbar {
+        background:#6F1AB6;
+        width: 7px;
+        height: 7px;
+        border-radius: 6px;
+      }
+      
+      .Evangelion.container::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: #3D1766;
+      }
+
+      @font-face {
+        font-family: "Evangelion";
+        src: url("./Evangelion.ttf") format(truetype);
+
+          }   
+     

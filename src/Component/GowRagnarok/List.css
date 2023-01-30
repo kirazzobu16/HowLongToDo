@@ -74,7 +74,10 @@ span>p{
     background: linear-gradient(180deg, rgba(9,24,121,0.969625350140056) 16%, rgba(0,212,255,1) 100%);
     padding: 15px 0;
     text-align: center;
-    border-radius: 5px;
+    border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px
 }
 
 .todo {

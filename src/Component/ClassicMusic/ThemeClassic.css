@@ -50,6 +50,18 @@
     animation: animateDropdown 300ms ease-in-out forwards;
     animation-delay: 150ms;
   }
+  .menu-AreaClassic li:hover>.dropdown li:nth-child(4){
+    animation: animateDropdown 300ms ease-in-out forwards;
+    animation-delay: 300ms;
+  }
+  .menu-AreaClassic li:hover>.dropdown li:nth-child(5){
+    animation: animateDropdown 300ms ease-in-out forwards;
+    animation-delay: 450ms;
+  }
+  .menu-AreaClassic li:hover>.dropdown li:nth-child(6){
+    animation: animateDropdown 300ms ease-in-out forwards;
+    animation-delay: 600ms;
+  }
   
   @keyframes animateDropdown {
     0%{

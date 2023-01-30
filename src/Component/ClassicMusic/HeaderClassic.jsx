@@ -46,7 +46,7 @@ function HeaderClassic({Toast,setToast,deleteToast,setDeleteToast}) {
             <span className='icon'>
               <FontAwesomeIcon className='check' icon={faCheck} />
             </span>
-              <span className='info'>You Are Adding The List</span>    
+              <span className='info'>You Added The List</span>    
               <FontAwesomeIcon onClick={()=>DeleteAddToast()} className='close' icon={faXmark} />                               
           </div> 
 
@@ -56,7 +56,7 @@ function HeaderClassic({Toast,setToast,deleteToast,setDeleteToast}) {
             <span className='iconDelete'>
               <FontAwesomeIcon className='checkDelete' icon={faCheck} />
             </span>
-              <span className='infoDelete'>You Are Deleting The List</span>    
+              <span className='infoDelete'>You Deleted The List</span>    
               <FontAwesomeIcon onClick={()=>DeleteDeleteToast()} className='closeDelete' icon={faXmark} />                               
           </div> 
 

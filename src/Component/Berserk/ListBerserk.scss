@@ -1,0 +1,92 @@
+.Berserk {
+    
+
+    li {
+        list-style: none;
+        font-family:"Berserk";
+        font-size: 14px;
+        
+     }
+     @font-face {
+         font-family: "Berserk";
+         src: url("./Manga.ttf") format(truetype);
+       }
+      
+       button{
+         font-family: "Berserk";
+         background-image:radial-gradient(circle, rgba(255,250,231,1) 49%, rgba(255,250,231,1) 51%, rgba(239,239,239,1) 64%);
+         border: 0px;
+         padding: 2px;
+         border-radius: 3px;
+       }
+       button:hover{
+        background-image: radial-gradient(rgba(0, 0, 0, 0.116) 7.1%, rgba(240, 246, 238, 0) 67.4% );
+       }
+     
+     .flex{
+         display: flex;
+         justify-content: space-evenly; 
+     }
+     
+     .list {
+         padding: 20px 0;
+         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+         backdrop-filter: blur(0.5px);
+         -webkit-backdrop-filter: blur(0.5px);
+        
+     }
+     
+     p {
+         margin-top: 2px;
+     }
+     
+     span>p{
+         margin-top: 2px;
+     }
+     .container { 
+         background-color: transparent;
+         margin-top: 10px;
+         height:370px;
+         overflow: auto; 
+         scrollbar-width: thin;   
+     }
+     
+     
+       
+     .Time {
+         display:flex; 
+         column-gap: 10px; 
+         justify-content: space-evenly;
+         align-self: center;
+     }
+     
+     .box {
+         width:15%;   
+         background: linear-gradient(270deg, rgba(67,66,63,1) 0%, rgba(112,108,97,1) 18%, rgba(92,90,82,1) 92%, rgba(87,85,78,1) 93%, rgba(87,85,78,1) 93%, rgba(51,51,51,1) 100%);
+         padding: 15px 0;
+         text-align: center;
+         border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px
+     }
+     
+     .todo {
+         word-break: break-all;
+     }
+     
+     li>button {
+         align-self: center;
+     }
+    }
+    .Berserk.container::-webkit-scrollbar {
+        background:rgba(112,108,97,1);
+        width: 7px;
+        height: 7px;
+        border-radius: 6px;
+      }
+      
+      .Berserk.container::-webkit-scrollbar-thumb {
+        border-radius: 6px;
+        background: rgba(51,51,51,1);
+      }
