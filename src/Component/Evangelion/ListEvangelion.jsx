@@ -30,11 +30,20 @@ function ListEvangelion({setDeleteToast}) {
         if (todo.id === id ) {
           ++todo.Hours;
         }
-        if (todo.Hours>=200&& todo.Hours<500){
-          todo.level="Orta Seviye"
+        if (todo.Hours<10){
+          todo.level="Novice"
         } 
-        else if(todo.Hours>=500){
-          todo.level="İyi Seviye"
+        else if(todo.Hours>=10&&todo.Hours<2000){
+          todo.level="Advanced Beginner"
+        }
+        else if(todo.Hours>=2000&&todo.Hours<5000){
+          todo.level="Intermadiate"
+        }
+        else if(todo.Hours>=5000&&todo.Hours<10000){
+          todo.level="Senior"
+        }
+        else if(todo.Hours>=10000){
+          todo.level="Expert"
         }
         return todo;
       });
@@ -50,11 +59,20 @@ function ListEvangelion({setDeleteToast}) {
       if (todo.id === id &&todo.Hours ) {
         --todo.Hours;
       }
-      if (todo.Hours<200){
-        todo.level="Amatör"
+      if (todo.Hours<10){
+        todo.level="Novice"
       } 
-      else if(todo.Hours>=200 && todo.Hours<500){
-        todo.level="Orta Seviye"
+      else if(todo.Hours>=10&&todo.Hours<2000){
+        todo.level="Advanced Beginner"
+      }
+      else if(todo.Hours>=2000&&todo.Hours<5000){
+        todo.level="Intermadiate"
+      }
+      else if(todo.Hours>=5000&&todo.Hours<10000){
+        todo.level="Senior"
+      }
+      else if(todo.Hours>=10000){
+        todo.level="Expert"
       }
       return todo
     })
@@ -81,12 +99,21 @@ function ListEvangelion({setDeleteToast}) {
         todo.Minutes=0
         ++todo.Hours 
       }
-        if (todo.Hours>=200&& todo.Hours<500){
-          todo.level="Orta Seviye"
-        } 
-        else if(todo.Hours>=500){
-          todo.level="İyi Seviye"
-        }
+      if (todo.Hours<10){
+        todo.level="Novice"
+      } 
+      else if(todo.Hours>=10&&todo.Hours<2000){
+        todo.level="Advanced Beginner"
+      }
+      else if(todo.Hours>=2000&&todo.Hours<5000){
+        todo.level="Intermadiate"
+      }
+      else if(todo.Hours>=5000&&todo.Hours<10000){
+        todo.level="Senior"
+      }
+      else if(todo.Hours>=10000){
+        todo.level="Expert"
+      }
     
       
       return todo

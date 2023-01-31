@@ -30,11 +30,20 @@ function ListBerserk({setDeleteToast}) {
         if (todo.id === id ) {
           ++todo.Hours;
         }
-        if (todo.Hours>=200&& todo.Hours<500){
-          todo.level="Orta Seviye"
+        if (todo.Hours<10){
+          todo.level="Novice"
         } 
-        else if(todo.Hours>=500){
-          todo.level="İyi Seviye"
+        else if(todo.Hours>=10&&todo.Hours<2000){
+          todo.level="Advanced Beginner"
+        }
+        else if(todo.Hours>=2000&&todo.Hours<5000){
+          todo.level="Intermadiate"
+        }
+        else if(todo.Hours>=5000&&todo.Hours<10000){
+          todo.level="Senior"
+        }
+        else if(todo.Hours>=10000){
+          todo.level="Expert"
         }
         return todo;
       });
@@ -50,12 +59,21 @@ function ListBerserk({setDeleteToast}) {
       if (todo.id === id &&todo.Hours ) {
         --todo.Hours;
       }
-      if (todo.Hours<200){
-        todo.level="Amatör"
-      } 
-      else if(todo.Hours>=200 && todo.Hours<500){
-        todo.level="Orta Seviye"
-      }
+        if (todo.Hours<10){
+          todo.level="Novice"
+        } 
+        else if(todo.Hours>=10&&todo.Hours<2000){
+          todo.level="Advanced Beginner"
+        }
+        else if(todo.Hours>=2000&&todo.Hours<5000){
+          todo.level="Intermadiate"
+        }
+        else if(todo.Hours>=5000&&todo.Hours<10000){
+          todo.level="Senior"
+        }
+        else if(todo.Hours>=10000){
+          todo.level="Expert"
+        }
       return todo
     })
     setToDoList(updatedTodos);
@@ -81,14 +99,21 @@ function ListBerserk({setDeleteToast}) {
         todo.Minutes=0
         ++todo.Hours 
       }
-        if (todo.Hours>=200&& todo.Hours<500){
-          todo.level="Orta Seviye"
-        } 
-        else if(todo.Hours>=500){
-          todo.level="İyi Seviye"
-        }
-    
-      
+      if (todo.Hours<10){
+        todo.level="Novice"
+      } 
+      else if(todo.Hours>=10&&todo.Hours<2000){
+        todo.level="Advanced Beginner"
+      }
+      else if(todo.Hours>=2000&&todo.Hours<5000){
+        todo.level="Intermadiate"
+      }
+      else if(todo.Hours>=5000&&todo.Hours<10000){
+        todo.level="Senior"
+      }
+      else if(todo.Hours>=10000){
+        todo.level="Expert"
+      }
       return todo
     })
     setToDoList(updatedTodos);  
@@ -104,16 +129,16 @@ function ListBerserk({setDeleteToast}) {
                       <span className='box todo' key={item.id}><p>{item.toDo}</p> </span>
                       <div className='Time box'>
                         <button onClick={()=>DecreaseHours(item.id)}>-</button>
-                        <p>{item.Hours} Hours</p>
+                        <p>{item.Hours} HOURS</p>
                         <button onClick={() => IncreaseHours(item.id)}>+</button>
                       </div>
                       <div className='Time box'>
                         <button onClick={()=>DecreaseMinutes(item.id)} >-</button>
-                        <p> {item.Minutes} Minutes</p>
+                        <p> {item.Minutes} MINUTES</p>
                         <button onClick={()=>IncreaseMinutes(item.id)}>+</button>
                       </div>
                       <span className='box'><p>{item.level}</p></span>
-                      <button onClick={()=>Delete(item.id)}>Delete</button>                             
+                      <button onClick={()=>Delete(item.id)}>DELETE</button>                             
                   </li>   
             </div>
               ))             

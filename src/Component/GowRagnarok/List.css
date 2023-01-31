@@ -37,6 +37,7 @@ li {
 
 p {
     margin-top: 2px;
+    
 }
 
 span>p{
@@ -82,6 +83,7 @@ span>p{
 
 .todo {
     word-break: break-all;
+    
 }
 
 li>button {

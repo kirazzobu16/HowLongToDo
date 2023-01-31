@@ -16,7 +16,7 @@ function HeaderLotr({Toast,setToast,deleteToast,setDeleteToast}) {
     
     if(toDo!=="" &&toDo.length<=25) {
        
-      setToDoList([...toDoList, {id:`${toDo}-${Date.now()}`,toDo,Hours:198,Minutes:0,level:"Amatör"}])
+      setToDoList([...toDoList, {id:`${toDo}-${Date.now()}`,toDo,Hours:0,Minutes:0,level:"Novice"}])
       setTodo("")
       
       setDeleteToast("hidden")

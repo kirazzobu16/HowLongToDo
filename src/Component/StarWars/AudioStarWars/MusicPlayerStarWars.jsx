@@ -4,7 +4,7 @@ import { useState,useEffect } from 'react'
 import BinarySunset from "./Music/BinarySunset.mp3"
 import DarthVader  from "./Music/DarthVader.mp3"
 import DueloftheFates from "./Music/DueloftheFates.mp3"
-import Mandolarian from "./Music/Mandolarian.mp3"
+import Mandolarian from "./Music/Mandalorian.mp3"
 import AcrosstheStar from "./Music/AcrosstheStars.mp3"
 import MainTheme from "./Music/MainTheme.mp3"
 
