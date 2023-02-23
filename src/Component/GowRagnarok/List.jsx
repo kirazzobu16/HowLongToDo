@@ -96,6 +96,10 @@ function List({setDeleteToast}) {
       if (todo.id === id &&todo.Minutes<59 ) {
         ++todo.Minutes;
       }
+      else if(todo.id === id && todo.Minutes>=59) {
+        todo.Minutes=0
+        ++todo.Hours 
+      }
       if (todo.Hours<10){
         todo.level="Novice"
       } 
